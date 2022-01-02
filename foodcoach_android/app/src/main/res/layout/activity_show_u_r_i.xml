@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ShowURI">
+
+    <Button
+        android:id="@+id/btn_get_nutrition_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get Nutrition Data"/>
+    <LinearLayout
+        android:id="@+id/lin_lay_show_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+    <TextView
+        android:id="@+id/tv_nutrition_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.anychart.AnyChartView
+        android:id="@+id/any_char_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

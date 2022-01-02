@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="-46dp"
+            android:background="@drawable/circled_box"
+            android:fontFamily="@font/koenigsberg"
+            android:gravity="center"
+            android:rotation="-25"
+            android:text="Food\nCoach"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_get_nutrition_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_input_nutrition_info"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circled_btn"
+            android:fontFamily="@font/koenigsberg"
+            android:text="Get Nutrition info"
+            android:textColor="@color/red" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_input_nutrition_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_copyright"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/circled_btn"
+            android:fontFamily="@font/koenigsberg"
+            android:text="Input Nutrition Data"
+            android:textColor="@color/red" />
+
+
+        <TextView
+            android:id="@+id/tv_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:text="CopyRight@Sejong.DFPL\njwbyun@sejong.ac.kr\nzero524@sju.ac.kr\njaxon.ahn@gmail.com\nkoc0819@gmail.com" />
+    </RelativeLayout>
+
+
+</LinearLayout>
